@@ -25,14 +25,15 @@
 }
 #heading .button{
   font-size: 18px;
-  text-decoration: none;
   color: #926239;
   border: #926239 1px solid;
   padding: 14px 20px;
   border-radius: 10px;
   margin-top: 20px;
 }
-
+.button:hover{
+  background-color: #926239;
+}
 .section{
   background-color: #926239;
   color: white;
