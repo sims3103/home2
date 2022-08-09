@@ -1,5 +1,45 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.main-heading{
+  font-weight: bold;/*делает цвет жирным*/
+  font-size: 40px;/*размер текста*/
+  text-align: center;/*текст по центру*/
+}
+.stylized,
+.text::first-letter{ /*автоматически меняет первую букву*/
+font-size: 80px;
+color: red;
+font-style: italic;
+text-transform: capitalize;
+}
+
+.text::first-line{/*автоматически меняет первую строку*/
+  background-color: yellow;
+}
+.text::selection{
+  background-color: tomato;/*меняет цвет курсора*/
+  color: aliceblue;/*меняет цвет текста выбраного курсором*/
+}
+
+input::placeholder{ /*placeholder это подсказка в строке input*/
+  color: red;
+  font-style: italic;/*стиль текста*/
+  font-weight: bold;
+}
+
+.text::before,
+.text::after{
+  background-color: aqua;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.text::before{
+  content: open-quote; /*::before работает только с content*//*open-quote открывает кавычки*/
+  background-color: aqua;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.text::after{
+ content: close-quote;/*close-quote закрывает кавычки*/
+
 }
