@@ -1,0 +1,37 @@
+main{
+  background-color: olivedrab;
+  width: 500px;
+  margin: 0 auto;
+  height: 300vh;
+}
+
+section{
+  background-color: darkgoldenrod;
+  margin: 0 auto;
+  width: 300px;
+  height: 500px;
+}
+.square1, .square2,.square3,.square4{
+  --size:30px;
+  border: 2px solid rgb(44, 56, 16);
+  width: var(--size);
+  height: var(--size);
+  background-color: rgb(43, 251, 1);
+}
+  .square1{
+  width: initial;
+  position: fixed;
+   background-color: chartreuse;
+   left: 0;
+   right: 0;
+   top: 0;
+  }
+
+  .square2{
+    width: initial;
+    position: fixed;
+    background-color: chartreuse;
+    left: 300;
+    right: 0;
+    bottom: 300px;
+    }
